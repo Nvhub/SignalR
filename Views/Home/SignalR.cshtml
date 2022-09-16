@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1 class="text-center"> Welcome To SignalR </h1>
+<hr />
+
+    <div class="container">
+
+        <h3> Server Connection : <span id="connction"></span> </h3>
+       <hr/>
+
+        <div class="row">
+            <div class="col-2">Message</div>
+            <div class="col-4"><input class="form-control" type="text" id="messageInput" /></div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <input type="button" id="sendButton" class="btn btn-outline-primary" value="Send Message" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <h3 id="messageShow"></h3>
+    </div>
+
+<script src="~/js/signalr.js"></script>
+<script src="~/js/message.js"></script>
